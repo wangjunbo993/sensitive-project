@@ -1,0 +1,27 @@
+/* src/styles/thing-list.scss */
+@use './variables' as *;
+
+.thing-list-container {
+    padding: $padding-base;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .thing-list-search {
+        margin-bottom: 16px;
+        // button {
+        //   color: $primary-color;
+        // }
+    }
+    .thing-list-table {
+        flex: 1;
+        overflow: auto;
+        .detail-button{
+            padding: 0;
+        }
+    }
+    .thing-list-pagination{
+        justify-content: end;
+        margin-top: 20px;
+    }
+
+}

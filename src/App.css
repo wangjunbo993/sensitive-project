@@ -1,0 +1,82 @@
+/* ===========================
+   初始化 CSS（通用基础样式）
+   =========================== */
+
+/* 1. 清除默认边距 & 统一盒模型 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. 让 html, body 占满屏幕高度 */
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+  -webkit-font-smoothing: antialiased; /* 抗锯齿 */
+}
+
+/* 3. 移除列表默认样式 */
+ul, ol {
+  list-style: none;
+}
+
+/* 4. 链接样式重置 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 5. 图片自适应容器 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 6. 表单元素优化 */
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+button {
+  cursor: pointer;
+}
+
+/* 7. 表格边框折叠 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 8. 默认滚动条优化（可选，仅 WebKit 内核生效） */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+/* ===========================
+   应用级样式（可根据项目需求调整）
+   =========================== */
+#root {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
